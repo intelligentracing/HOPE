@@ -22,7 +22,7 @@ The pipeline proceeds through four phases, all covered in this document:
 3. **Motion preprocessing** — Convert retargeted motions to the BeyondMimic training format
 4. **RL policy training** — Train the motion tracking policy using the BeyondMimic MDP (Section 4 for Isaac Lab/G1, Section 4A for mjlab/A3)
 
-The trained policy is exported as an ONNX model for deployment. Deployment to the real robot via ROS 2 is covered in a separate document.
+The trained policy is exported as an ONNX model for deployment. Deployment to the real robot via ROS 2 is covered in the companion *HOPE Hardware Deployment Reference Setup*.
 
 ---
 
@@ -59,7 +59,7 @@ The following elements are used as-is from the published open-source code, with 
 
 ### 0.3  What Is Not Implemented in This Document
 
-- **Real robot deployment** — The `motion_tracking_controller` ROS 2 inference pipeline, `legged_control2` low-level controller, and `unitree_bringup` launch configuration are covered in a separate deployment document.
+- **Real robot deployment** — The `motion_tracking_controller` ROS 2 inference pipeline, `legged_control2` low-level controller, and `unitree_bringup` launch configuration are covered in the companion *HOPE Hardware Deployment Reference Setup*.
 - **Diffusion-based multi-skill composition** — BeyondMimic's diffusion distillation for composing multiple motion skills into a single policy is not used. HITTER trains separate forehand and backhand policies and switches between them.
 - **Ball spin response** — Neither HITTER nor this reference setup adjusts the WBC's racket orientation to counteract ball spin.
 - **HITTER's trained policy weights** — The HITTER paper has not released trained model weights. All training in this document starts from scratch using the BeyondMimic framework.
@@ -1179,3 +1179,4 @@ This runs the ONNX policy in a MuJoCo environment with the same G1 model, confir
 - Companion documents:
   - *HOPE Motion Capture System Reference Setup for Ping-Pong Arena*
   - *HOPE 7DOF Racket Model-based Planner Reference Setup*
+  - *HOPE Hardware Deployment Reference Setup*

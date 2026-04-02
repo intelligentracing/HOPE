@@ -391,4 +391,5 @@ The HOPE motion capture reference system tracks exactly three categories of obje
 - motion_capture_tracking: https://github.com/IMRCLab/motion_capture_tracking
 - Agibot X1 training code (reference for Agibot kinematic conventions): https://github.com/AgibotTech/agibot_x1_train
 - Companion document: *HOPE 7DOF Racket Model-based Planner Reference Setup, v0.1*
-- Companion document: *HOPE WBC Simulation Training Reference Setup, v0.4*
+- Companion document: *HOPE WBC Simulation Training Reference Setup, v0.5*
+- Companion document: *HOPE Hardware Deployment Reference Setup, v0.1*
